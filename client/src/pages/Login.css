@@ -20,6 +20,11 @@
     text-align: center;
 }
 
+.logo{
+    width: 150px;
+    height: 150px;
+}
+
 #gframe,
 select {
     border: 2px solid black;
@@ -27,14 +32,14 @@ select {
 
 .inputBox {
     position: relative;
-    width: 300px;
+    width: 500px;
     align-items: center;
     margin-top: 20px;
 }
 
 .inputBox input {
-    width: 100%;
-    padding: 10px;
+    width: 94.25%;
+    padding: 15px;
     border: 2px solid rgba(255, 255, 255, 0.25);
     border-radius: 5px;
     background: #1d2b3a;
@@ -70,6 +75,52 @@ select {
     padding: 0 5px;
 }
 
+.continue{
+    border: 2px solid rgb(206, 206, 206);
+    width: 500px;
+    margin-top: 20px;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 0 0 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.continue:hover{
+    border: 2px solid #6f2da8;
+    background-color: #6f2da8;
+    color: #fff;
+    transition: 0.23s ease-out;
+}
+
 .or{
     color: gray;
+}
+
+.googlelogin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid rgb(181, 181, 181);
+    width: 500px;
+    justify-content: center;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Arial';
+}
+
+.gimg{
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+}
+
+.googlelogin:hover{
+    background-color: rgb(225, 225, 225);
+    transition: 0.23s ease-out;
+}
+
+h2{
+    margin: 5px;
 }
