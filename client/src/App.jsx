@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Login from "./pages/Login";
+
 
 function App() {
   const [message, setMessage] = useState('');
@@ -16,10 +18,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="text-center text-2xl font-bold mt-5">
-        Welcome to SkillSwap
-      </h1>
+      <h1>Skill Swap</h1>
       <p>{message}</p>
+      <Login/>
     </div>
   );
 }
