@@ -222,3 +222,21 @@ h2:hover{
     color: red;
     transition: 0.23s ease;
 }
+
+.signup-link{
+    margin-top: 30px;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.signup-link a {
+    color: #964cd6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+.signup-link a:hover{
+    color: #d3a1ff;
+    transition: 0.2s ease;
+}

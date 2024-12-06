@@ -45,6 +45,7 @@ const Login = () => {
               Forget Username?
             </a>
           </div>
+          <p className="signup-link">Don&apos;t have an account? <a href="/">Sign Up</a></p>
         </div>
       </div>
     </>
