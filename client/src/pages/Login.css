@@ -10,17 +10,62 @@
     flex: 1;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .left-container {
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 .right-container{
     border: 5px solid yellow;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
+
+.right-container h1{
+    top: 0;
+    font-size: 2.5rem; /* Adjust as needed */
+    font-weight: bold;
+    background: linear-gradient(90deg, #6fdba5, #005f3c); /* Light green to dark green */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center; /* Center align the text */
+}
+
+
+.moving-text {
+    font-size: 2rem; /* Large and readable on all devices */
+    font-weight: 600; /* Slightly bold for emphasis */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #005f3c; /* Dark green to match your logo theme */
+    background: linear-gradient(90deg, #6fdba5, #005f3c); /* Light to dark green */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .cursor {
+    font-size: 2rem; /* Match the text size */
+    color: #005f3c; /* Same dark green for consistency */
+    animation: blink 0.7s step-end infinite; /* Smooth blinking effect */
+  }
+
+  @keyframes blink {
+    from, to {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
 
 .logo{
     width: 150px;
@@ -61,8 +106,7 @@
     top: 14px;
     font-size: 16px;
     color: #aaa;
-    background: #ffffff;
-    padding: 0 5px;
+    padding: 0;
     transition: all 0.3s ease;
     pointer-events: none;
     z-index: 1;
@@ -75,7 +119,7 @@
     left: 10px;
     font-size: 12px;
     color: #00bcd4;
-    background: linear-gradient(90deg, #ffffff, #e0f7fa);
+    background: linear-gradient(90deg, #ffffff, #ffffff);
   }
   
 

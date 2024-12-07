@@ -1,13 +1,35 @@
 import "./Login.css";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 import gimg from "../assets/google-icon.svg";
 import limg from "../assets/linkedin-icon.svg";
 import logo from "/SSlogo.png";
 
 const Login = () => {
+  const [text] = useTypewriter({
+    words: [
+      "Unlock your potential with global expertise",
+      "Grow with global experts",
+      "Learn. Connect. Grow",
+    ],
+    loop: true,
+    typeSpeed: 60, // Slightly faster typing speed for better engagement
+    deleteSpeed: 50, // Faster delete speed for a smoother transition
+    delaySpeed: 1000, // Shortened delay between words to keep users engaged
+  });
+  
+
   return (
     <>
       <div className="container">
-        <div className="right-container">Right Side container</div>
+        <div className="right-container">
+          <h1>Why Join SkillSwap?</h1>
+          <span className="moving-text">
+            <h2>{text}</h2>
+            <span className="cursor">
+              <Cursor />
+            </span>
+          </span>
+        </div>
         <div className="left-container">
           <img src={logo} alt="icon" className="logo" />
           <h2>Skill Swap</h2>
@@ -45,7 +67,9 @@ const Login = () => {
               Forget Username?
             </a>
           </div>
-          <p className="signup-link">Don&apos;t have an account? <a href="/">Sign Up</a></p>
+          <p className="signup-link">
+            Don&apos;t have an account? <a href="/">Sign Up</a>
+          </p>
         </div>
       </div>
     </>
