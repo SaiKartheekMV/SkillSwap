@@ -1,10 +1,13 @@
 import "./Login.css";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { useNavigate } from "react-router-dom";
 import gimg from "../assets/google-icon.svg";
 import limg from "../assets/linkedin-icon.svg";
 import logo from "/SSlogo.png";
 
 const Login = () => {
+  const navigate = useNavigate();
+
   const [text] = useTypewriter({
     words: [
       "Unlock your potential with global expertise",
@@ -17,6 +20,10 @@ const Login = () => {
     delaySpeed: 1000, // Shortened delay between words to keep users engaged
   });
   
+
+  const handleContinue = () =>{
+    navigate("/dashboard");
+  }
 
   return (
     <>
@@ -47,7 +54,7 @@ const Login = () => {
             />
             <label className="input-label">Enter Your Email</label>
           </div>
-          <span className="continue">
+          <span className="continue" onClick={handleContinue}>
             <p>Continue</p>
           </span>
           <span className="or">OR</span>
