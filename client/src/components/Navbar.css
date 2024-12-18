@@ -1,12 +1,73 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-
+/* Navbar.css */
 .navbar {
-    z-index: 10;
-    position: sticky;
-    top: 0;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar-links {
+  display: none;
+  flex-direction: column;
+}
+
+.navbar-links.show {
+  display: flex;
+}
+
+.navbar-link {
+  color: #333;
+  text-decoration: none;
+  margin: 5px 0;
+  padding: 5px 10px;
+  transition: color 0.2s ease;
+}
+
+.navbar-link:hover {
+  color: #007bff;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  height: 24px;
+  width: 24px;
+}
+
+/* Desktop view */
+@media (min-width: 768px) {
+  .navbar-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
-  
+
+  .navbar-link {
+    margin: 0 10px;
+  }
+}
