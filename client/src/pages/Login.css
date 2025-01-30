@@ -187,12 +187,12 @@
   transition: 0.23s ease-out;
 }
 
-h2{
+.h2{
   margin: 5px;
   font-size: 30px;
 }
 
-h2:hover{
+.h2:hover{
   font-size: 32px;
   color: #00ffab;
   transition: 0.23s ease-out;

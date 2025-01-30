@@ -22,7 +22,7 @@ const Login = () => {
   
 
   const handleContinue = () =>{
-    navigate("/dashboard");
+    navigate("/home");
   }
 
   return (
@@ -31,7 +31,7 @@ const Login = () => {
         <div className="right-container">
           <h1>Why Join SkillSwap?</h1>
           <span className="moving-text">
-            <h2>{text}</h2>
+            <h2 className="h2">{text}</h2>
             <span className="cursor">
               <Cursor />
             </span>
@@ -39,7 +39,7 @@ const Login = () => {
         </div>
         <div className="left-container">
           <img src={logo} alt="icon" className="logo" />
-          <h2>Skill Swap</h2>
+          <h2 className="h2">Skill Swap</h2>
           <p className="tag-line">
             <span className="span-1">Connect</span>
             <span className="span-2">Collaborate</span>
