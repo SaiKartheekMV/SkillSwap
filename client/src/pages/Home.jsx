@@ -1,5 +1,7 @@
 import "./Home.css";
-
+import conImg from '../assets/connectImg.jpg'
+import learnImg from '../assets/learnImg.jpg'
+import shareImg from '../assets/shareImg.jpg'
 const Home = () => {
   return (
     <div className="home-container">
@@ -21,7 +23,7 @@ const Home = () => {
         <div className="features-grid">
           {/* Feature 1 */}
           <div className="feature-card">
-            <img src="/assets/connect.svg" alt="Connect" />
+            <img src={conImg} alt="Connect" />
             <h3>Seamless Connections</h3>
             <p>
               Find and connect with talented individuals who share your goals
@@ -30,7 +32,7 @@ const Home = () => {
           </div>
           {/* Feature 2 */}
           <div className="feature-card">
-            <img src="/assets/learn.svg" alt="Learn" />
+            <img src={learnImg} alt="Learn" />
             <h3>Learn from the Best</h3>
             <p>
               Gain valuable insights and skills from experienced professionals
@@ -39,7 +41,7 @@ const Home = () => {
           </div>
           {/* Feature 3 */}
           <div className="feature-card">
-            <img src="/assets/share.svg" alt="Share" />
+            <img src={shareImg} alt="Share" />
             <h3>Share Your Expertise</h3>
             <p>
               Showcase your skills and teach others to create a collaborative

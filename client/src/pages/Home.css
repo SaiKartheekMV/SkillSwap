@@ -70,9 +70,11 @@
   }
   
   .feature-card img {
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     margin-bottom: 10px;
+    border-radius: 75px;
+    image-rendering: optimizeSpeed;
   }
   
   .feature-card h3 {
