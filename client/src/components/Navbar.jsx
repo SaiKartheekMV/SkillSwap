@@ -1,21 +1,27 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleContinue = () => {
+      navigate("/home")
+  }
+  
   return (
     <nav className="navbar">
       <div className="navbar-container">
         {/* Logo */}
         <div className="navbar-logo">
-          <img src="/SSlogo.png" alt="logo" className="logo-image" />
-          <h1 className="logo-title">SkillSwap</h1>
+         <img src="/SSlogo.png" alt="logo" className="logo-image" onClick={handleContinue}/>
+          <h1 className="logo-title" onClick={handleContinue}>SkillSwap</h1>
         </div>
 
         {/* Menu items */}
